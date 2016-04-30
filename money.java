@@ -14,8 +14,9 @@ class Dollar {
 		assertFalse(new Dollar(5).equals(new Dollar(6)));
 	}
 	
-	public boolean equals(Object Object) {
-		return true;
+	public boolean equals(Object object) {
+		Dollar dollar = (Dollar) object; //() is type conversion operator
+		return amount == dollar.amount;
 	}
 
 	public void testMultiplication() {
